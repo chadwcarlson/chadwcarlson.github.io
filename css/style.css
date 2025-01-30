@@ -1,4 +1,6 @@
 /* From the :root element you can easily change the colors of the design, its size and so on. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
 
   /* You can change the font family in the whole design here. (You need to add the font family to the codes.) */
@@ -67,11 +69,27 @@ body {
   font: var(--font_size) var(--font_family);
   font-weight: 400;
   line-height: 1.5;
-  background: var(--background_color) var(--background_image) no-repeat center;
+  background: rgb(134, 161, 185);
+  /* background: var(--background_color) var(--background_image) no-repeat center; */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  font-size: 0.9em;
+
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+code {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 500;
+}
+
+section > a > button {
+  cursor: pointer;
 }
 
 .flex_column_center {
@@ -98,10 +116,49 @@ body {
   align-items: center;
 }
 
+.job_title {
+  font-family: "IBM Plex Sans Condensed", serif;
+  font-weight: 600;
+}
+
 /* Logo, Title and Description Codes */
 
 .header_img {
   padding-top: 1em;
+}
+
+.work_era {
+  text-align: left;
+  margin-bottom: 0.5em; 
+  font-size: 0.8em !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  color: #5e62a9;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.label {
+  background-color: #5e62a9;
+  color: #fff;
+  padding: 0.2em 1em;
+  margin-right: 0.5em;
+  border-radius: 5px;
+}
+
+.video_image {
+  max-height: 300px;
+}
+
+.sub_header {
+  text-align: left;
+  margin-bottom: 0.5em; 
+  /* font-size: 0.8em !important; */
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  color: #5e62a9;
 }
 
 .header_img img {
@@ -139,11 +196,13 @@ header {
 .header_text h1 {
   color: var(--title_color);
   font-size: 2em;
+  font-family: "IBM Plex Sans Condensed", serif;
+  font-weight: 700;
 }
 
 .header_text h2 {
   color: var(--description_color);
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /* Social Media Icons Codes */
@@ -195,6 +254,8 @@ header {
   text-align: center;
   list-style-type: none;
   cursor: pointer;
+  font-family: "IBM Plex Sans Condensed", serif;
+  font-weight: 500;
   padding: 0.5em;
   /* border-radius: 0.3em; */
   cursor: pointer;
