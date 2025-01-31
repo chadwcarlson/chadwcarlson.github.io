@@ -116,6 +116,10 @@ section > a > button {
   align-items: center;
 }
 
+a, a:visited {
+  color: var(--menu_active_text_color);
+}
+
 .job_title {
   font-family: "IBM Plex Sans Condensed", serif;
   font-weight: 600;
@@ -125,6 +129,13 @@ section > a > button {
 
 .header_img {
   padding-top: 1em;
+}
+
+.taglines {
+  font-family: "IBM Plex Mono", serif;
+  padding-top: 0.4em;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .work_era {

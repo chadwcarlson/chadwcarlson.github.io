@@ -1,5 +1,6 @@
 /* Menu Active Codes */
-
+console.log('finding path');
+console.log(window.location.href)
 let targets = document.querySelectorAll('[data-target]')
 targets.forEach(element => {
   element.addEventListener('click', () => {
